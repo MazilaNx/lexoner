@@ -5,6 +5,9 @@ import onepageScroll from './jquery.onepage-scroll.js';
 
 
 $(document).ready(function(){
+  if (window.location.hash) {
+    window.location.hash = '';
+  }
   var donePage = {
     isDone1: false,
     isDone2: false,
@@ -20,7 +23,6 @@ $(document).ready(function(){
     beforeMove: function (index) {
       switch (index) {
         case 1:
-          console.log('1')
           break;
         case 2:
           if (donePage.isDone2 === true) {
@@ -50,16 +52,12 @@ $(document).ready(function(){
           $(' .js-mechanisms').removeClass('active');
           break;
         case 6:
-          console.log('6')
           break;
-        default:
-        // alert( "Нет таких значений" );
       }
     },
     afterMove: function(index) {
       switch (index) {
         case 1:
-          console.log('1')
           break;
         case 2:
           if (donePage.isDone2 === true) {
@@ -187,15 +185,13 @@ $(document).ready(function(){
             return false
           }
           donePage.isDone5 = true;
-          $('.js-title-page5').append('<div class="underline-title-creator"></div>');
-          $(' .js-mechanisms').addClass('active');
-
+          setTimeout(function () {
+            $('.js-title-page5').append('<div class="underline-title-creator"></div>');
+            $(' .js-mechanisms').addClass('active');
+          }, 300);
           break;
         case 6:
-          console.log('6')
           break;
-        default:
-          // alert( "Нет таких значений" );
       }
     }
   });

@@ -175,25 +175,19 @@ body {
     }
 
     @media (max-width: 1023px) {
-      //height: 54vh;
       padding-top: 3vh;
 
       .title-right-side {
         font-size: 23px;
         line-height: unset;
-        //text-align: center;
       }
 
       .list-achievement {
         height: 41vh;
         justify-content: space-between;
-        //margin-top: 0;
 
         .item {
-          //flex-direction: column;
           align-items: center;
-          //justify-content: center;
-          //margin-bottom: 1vh;
           margin-bottom: 0;
 
           .number-wrapper {
@@ -203,9 +197,6 @@ body {
 
           .description {
             font-size: 18px;
-            //text-align: center;
-            //margin-top: 15px;
-            //margin-left: 0;
             line-height: unset;
           }
         }
