@@ -880,7 +880,7 @@ header {
   background: rgba(52, 50, 50, 0.75);
 }
 .main section.page2 {
-  background: url("./../../img/bg-2.png");
+  background: url("./../img/bg-2.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center, center;
@@ -889,7 +889,7 @@ header {
   //background: rgba(52, 50, 50, 0.92);
 }
 .main section.page4 {
-  background: url("./../../img/bg-4.png");
+  background: url("./../img/bg-4.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 100%, 50%;
@@ -897,7 +897,7 @@ header {
 
 @media (max-width: 1023px) {
   .main section.page2 {
-    background: url("./../../img/bg-2-mobile.png");
+    background: url("./../img/bg-2-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
