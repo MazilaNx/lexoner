@@ -152,8 +152,10 @@ $(document).ready(function () {
           }
           donePage.isDone3 = true;
           $('.js-title-page3').append('<div class="underline-title-creator"></div>');
-          $('.js-gif-mobile').attr("src","./../../../img/bg-3-rotate.gif");
-          $('.js-gif').attr("src","./../../../img/bg-3.gif");
+          // $('.js-gif-mobile').attr("src","./../../../img/bg-3-rotate.gif");
+          // $('.js-gif').attr("src","./../../../img/bg-3.gif");
+          $('.js-gif-mobile').attr("src","./img/bg-3-rotate.gif");
+          $('.js-gif').attr("src","./img/bg-3.gif");
           break;
         case 4:
           if (donePage.isDone4 === true) {
